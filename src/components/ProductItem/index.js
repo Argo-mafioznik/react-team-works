@@ -24,17 +24,17 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProductItem() {
+export default function ProductItem({ data }) {
   const classes = useStyles();
 
   const { title, images, price, description, id } = data;
 
-  //   const { addProductToCart } = useContext(storeContext);
+  const { addProductToCart } = useContext(storeContext);
 
   const history = useHistory();
 
   return (
-    <Card className={classes.root} style={{ top: 300 }}>
+    <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           onClick={() => history.push(`/products/${id}`)}
@@ -44,9 +44,9 @@ export default function ProductItem() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <truncate lines={1} ellipsis={"..."}>
+            <Truncate lines={1} ellipsis={"..."}>
               {title}
-            </truncate>
+            </Truncate>
           </Typography>
 
           <Typography variant="h5">{price} руб</Typography>
@@ -64,11 +64,7 @@ export default function ProductItem() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button
-          onClick={() => addProductToCart(data)}
-          size="small"
-          color="primary"
-        >
+        <Button onClick={() => addProductToCart(data)} size="small" color="primary">
           Cart
         </Button>
         <Button
