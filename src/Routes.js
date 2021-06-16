@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
+import Auth from "./Views/Auth/Auth";
 import BrandPage from "./Views/BrandPage/BrandPage";
 import MainPage from "./Views/MainPage/MainPage";
 import ProductCreatePage from "./Views/ProductCreatePage/ProductCreatePage";
@@ -27,6 +28,7 @@ export default function Routes() {
         />
         <Route path="/brand/:id" component={BrandPage} exact />
         <Route path="/cart" component={Cart} exact />
+        <Route path="/auth" component={Auth} exact />
       </Switch>
     </Router>
   );

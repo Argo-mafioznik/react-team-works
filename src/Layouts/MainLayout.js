@@ -22,6 +22,7 @@ import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { storeContext } from "../contexts/StoreContext";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const drawerWidth = 240;
 
@@ -149,6 +150,12 @@ export default function MainLayout(props) {
           <IconButton color="inherit">
 
             <ShoppingCartIcon/>
+          </IconButton>
+          </Link>
+
+          <Link to ="/auth">
+          <IconButton>
+            <AccountCircleIcon style={{color: 'white'}} />
           </IconButton>
           </Link>
 
