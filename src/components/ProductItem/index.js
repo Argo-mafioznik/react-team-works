@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -33,6 +33,12 @@ export default function ProductItem({ data }) {
 
   const history = useHistory();
 
+  const [title2, setTitle2] = useState("Добавить товар");
+
+  const Title = () => {
+    return <h1 onClick={() => setTitle2("Удалить")}>{title2}</h1>;
+  };
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -64,8 +70,13 @@ export default function ProductItem({ data }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={() => addProductToCart(data)} size="small" color="primary">
-          Cart
+        <Button
+          onClick={() => addProductToCart(data)}
+          onClick={() => setTitle2("Удалить")}
+          size="small"
+          color="primary"
+        >
+          {title2}
         </Button>
         <Button
           onClick={() => history.push(`/products/${id}`)}

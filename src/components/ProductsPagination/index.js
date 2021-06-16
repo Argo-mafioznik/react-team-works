@@ -23,7 +23,7 @@ export default function ProductsPagination({ count, page, setPage }) {
       count={count}
       page={page}
       className={classes.pagination}
-      color="secondary"
+      color="black"
     />
   );
 }

@@ -1,15 +1,15 @@
-import { IconButton, Typography } from '@material-ui/core';
-import React, { useContext, useEffect } from 'react';
-import { useHistory, useParams } from 'react-router';
-import Loader from '../../components/Loader';
-import { storeContext } from '../../contexts/StoreContext';
-import MainLayout from '../../Layouts/MainLayout';
-import ProductSlider from './components/ProductSlider';
-import classes from './productDetail.module.css';
-import DeleteIcon from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
-import { useConfirm } from 'material-ui-confirm';
-import { notifySuccess } from '../../helpers/notifiers';
+import { IconButton, Typography } from "@material-ui/core";
+import React, { useContext, useEffect } from "react";
+import { useHistory, useParams } from "react-router";
+import Loader from "../../components/Loader";
+import { storeContext } from "../../contexts/StoreContext";
+import MainLayout from "../../Layouts/MainLayout";
+import ProductSlider from "./components/ProductSlider";
+import classes from "./productDetail.module.css";
+import DeleteIcon from "@material-ui/icons/Delete";
+import EditIcon from "@material-ui/icons/Edit";
+import { useConfirm } from "material-ui-confirm";
+import { notifySuccess } from "../../helpers/notifiers";
 
 export default function ProductDetailPage() {
   const { fetchProductDetail, productDetail, deleteProduct } =
@@ -25,11 +25,11 @@ export default function ProductDetailPage() {
 
   const handleProductDelete = () => {
     confirm({
-      description: 'Удалить данный товар?',
+      description: "Удалить данный товар?",
     }).then(() => {
       deleteProduct(id).then(() => {
-        notifySuccess('Товар был успешно удален!');
-        history.push('/');
+        notifySuccess("Товар был успешно удален!");
+        history.push("/");
       });
     });
   };
@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
           </div>
 
           <Typography variant="h3">{productDetail.title}</Typography>
-          <Typography variant="h3">{productDetail.price}</Typography>
+          <Typography variant="h3">{productDetail.price} руб</Typography>
           <Typography variant="body1">{productDetail.description}</Typography>
         </div>
       ) : (

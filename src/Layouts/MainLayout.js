@@ -21,7 +21,7 @@ import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { storeContext } from "../contexts/StoreContext";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const drawerWidth = 240;
 
@@ -101,6 +101,9 @@ const useStyles = makeStyles((theme) => ({
     width: 56,
     objectFit: "contain",
   },
+  toolbar: {
+    backgroundColor: "black",
+  },
 }));
 
 export default function MainLayout(props) {
@@ -133,7 +136,7 @@ export default function MainLayout(props) {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+        <Toolbar className={classes.toolbar}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -144,12 +147,10 @@ export default function MainLayout(props) {
             <MenuIcon />
           </IconButton>
 
-          <Link to="/cart" style={{textDecoration: "none", color: 'white'}}>
-          
-          <IconButton color="inherit">
-
-            <ShoppingCartIcon/>
-          </IconButton>
+          <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+            <IconButton color="inherit">
+              <ShoppingCartIcon />
+            </IconButton>
           </Link>
 
           <div className={classes.navContent}>
@@ -190,7 +191,14 @@ export default function MainLayout(props) {
           {brands.map((brand) => (
             <Link to={`/brand/${brand.id}`}>
               <ListItem button key={brand.id}>
-                <ListItemText primary={brand.title} />
+                <ListItemText
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    outline: "none",
+                  }}
+                  primary={brand.title}
+                />
                 <ListItemIcon>
                   <img
                     className={classes.brandLogo}

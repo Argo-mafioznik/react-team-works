@@ -1,0 +1,20 @@
+.table {
+  min-width: 700px;
+}
+
+.paper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.count {
+  width: 35px;
+  border: none;
+  outline: none;
+}
