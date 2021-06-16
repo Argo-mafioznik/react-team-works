@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/images/dark-night-people-party.jpg");
+  background-size: cover;
 }
 
 code {

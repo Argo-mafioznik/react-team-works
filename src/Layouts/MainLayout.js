@@ -21,8 +21,8 @@ import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { storeContext } from "../contexts/StoreContext";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 const drawerWidth = 240;
 
@@ -154,10 +154,10 @@ export default function MainLayout(props) {
             </IconButton>
           </Link>
 
-          <Link to ="/auth">
-          <IconButton>
-            <AccountCircleIcon style={{color: 'white'}} />
-          </IconButton>
+          <Link to="/auth">
+            <IconButton>
+              <AccountCircleIcon style={{ color: "white" }} />
+            </IconButton>
           </Link>
 
           <div className={classes.navContent}>
@@ -194,6 +194,16 @@ export default function MainLayout(props) {
           </IconButton>
         </div>
         <Divider />
+        <Typography
+          style={{
+            color: "black",
+            fontWeight: 500,
+            margin: "10px 15px",
+          }}
+          variant="h5"
+        >
+          Исполнители
+        </Typography>
         <List>
           {brands.map((brand) => (
             <Link to={`/brand/${brand.id}`}>
@@ -216,6 +226,42 @@ export default function MainLayout(props) {
               </ListItem>
             </Link>
           ))}
+          <Divider
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              marginTop: 10,
+            }}
+          />
+          <Typography
+            style={{
+              color: "black",
+              marginLeft: 15,
+              marginTop: 15,
+              cursor: "pointer",
+            }}
+            variant="h5"
+            onClick={() => history.push(`/concerts`)}
+          >
+            Концерты
+          </Typography>
+          <Divider
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              marginTop: 15,
+            }}
+          />
         </List>
       </Drawer>
       <main

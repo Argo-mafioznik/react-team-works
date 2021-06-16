@@ -55,7 +55,7 @@ export default function ProductItem({ data }) {
             </Truncate>
           </Typography>
 
-          <Typography variant="h5">{price} руб</Typography>
+          <Typography variant="h5">{price} ₽</Typography>
 
           <Typography
             className={classes.description}
