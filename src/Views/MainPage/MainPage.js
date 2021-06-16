@@ -34,9 +34,11 @@ export default function MainPage() {
 
   return (
     <MainLayout>
-      <div>
-        <video src={scryp}></video>
-      </div>
+      {/* <div>
+        <video controls>
+          <source src={scryp} />
+        </video>
+      </div> */}
       <HeroSlider slider={heroSlider} />
       <ProductsList products={products} />
       <ProductsPagination
@@ -45,8 +47,8 @@ export default function MainPage() {
         count={Math.ceil(total / 4)}
       />
       <iframe
-        width="560"
-        height="315"
+        width="50%"
+        height="500"
         src="https://www.youtube.com/embed/x6m1ZRDTP70"
         title="YouTube video player"
         frameborder="0"
@@ -54,11 +56,11 @@ export default function MainPage() {
         allowfullscreen
       ></iframe>
 
-      <div>
+      {/* <div>
         <video controls>
           <source src={video} />
         </video>
-      </div>
+      </div> */}
     </MainLayout>
   );
 }
