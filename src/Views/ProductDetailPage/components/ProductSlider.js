@@ -1,15 +1,15 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
 
-import classes from '../productDetail.module.css';
-import 'react-responsive-carousel/lib/styles/carousel.css';
+import classes from "../productDetail.module.css";
+import "react-responsive-carousel/lib/styles/carousel.css";
 
 export default function ProductSlider({ images }) {
   return (
     <Carousel
       className={classes.sliderWrapper}
       showArrows={false}
-      showThumbs={true}
+      showThumbs={false}
       infiniteLoop={true}
     >
       {images.map((image, index) => (

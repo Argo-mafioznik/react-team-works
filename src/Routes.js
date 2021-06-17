@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Auth from "./Views/Auth/Auth";
 import BrandPage from "./Views/BrandPage/BrandPage";
-import Concerts from "./Views/Co/Concerts";
+import Concerts from "./Views/Concerts/Concerts";
 import MainPage from "./Views/MainPage/MainPage";
 import ProductCreatePage from "./Views/ProductCreatePage/ProductCreatePage";
 import ProductDetailPage from "./Views/ProductDetailPage/ProductDetailPage";
 import ProductUpdatePage from "./Views/ProductUpdatePage/ProductUpdatePage";
 import SearchResultPage from "./Views/SearchResultPage/SearchResultPage";
+import Tickets from "./Views/Tickets/Tickets";
 
 export default function Routes() {
   return (
@@ -31,6 +32,7 @@ export default function Routes() {
         <Route path="/cart" component={Cart} exact />
         <Route path="/auth" component={Auth} exact />
         <Route path="/concerts" component={Concerts} exact />
+        <Route path="/tickets" component={Tickets} exact />
       </Switch>
     </Router>
   );

@@ -33,7 +33,6 @@ export default function MainPage() {
   return (
     <MainLayout>
       <HeroSlider slider={heroSlider} />
-      <ProductsList products={products} />
       <ProductsPagination
         setPage={setPage}
         page={page}
