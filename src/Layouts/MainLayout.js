@@ -262,6 +262,30 @@ export default function MainLayout(props) {
               marginTop: 15,
             }}
           />
+          <Typography
+            style={{
+              color: "black",
+              marginLeft: 15,
+              marginTop: 15,
+              cursor: "pointer",
+            }}
+            variant="h5"
+            onClick={() => history.push(`/tickets`)}
+          >
+            Билеты
+          </Typography>
+          <Divider
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              marginTop: 15,
+            }}
+          />
         </List>
       </Drawer>
       <main
