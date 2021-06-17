@@ -2,8 +2,9 @@
   "brands": [
     {
       "id": 1,
-      "title": "Скриптонит",
-      "logo": "https://100biografiy.ru/wp-content/uploads/2021/04/9-3.jpg",
+      "title": "Спорт",
+      "logo": "https://img.icons8.com/ios/452/air-jordan.png",
+      "description": "",
       "sliderImages": [
         "https://versiya.info/uploads/posts/2018-10/1540113344_11657.jpg",
         "https://cdn.ananasposter.ru/image/cache/catalog/poster/music/95/2243-1000x830.jpg"
@@ -11,8 +12,8 @@
     },
     {
       "id": 2,
-      "title": "Макс Корж",
-      "logo": "https://vzvuke.net/style/performers/9d29661724e9085a7a03bd04f9166c0a_large.jpg",
+      "title": "Балет",
+      "logo": "https://i.pinimg.com/originals/42/68/1e/42681ea504ac0048681a005154f21656.jpg",
       "sliderImages": [
         "https://news.ykt.ru/upload/image/2018/04/71646/5ae128be9d991.jpg",
         "https://russianchicagomag.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-26-at-3.27.14-PM.png"
@@ -20,8 +21,8 @@
     },
     {
       "id": 3,
-      "title": "Miyagi",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-6dtNcer5W1i9ba1Ef0CD7dBbXK-RGF_J-w&usqp=CAU",
+      "title": "Форум",
+      "logo": "https://m2corp.com.ua/wp-content/themes/worky/images/portfolio_architects.png",
       "sliderImages": [
         "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/03/87/65/58/54/71075d640cd7.jpg",
         "https://i1.wp.com/sova.ponominalu.ru/wp-content/uploads/2019/01/miyagi-endspiel.jpg?fit=2560%2C1706&ssl=1"
@@ -43,7 +44,7 @@
       "id": 2,
       "brand": 2,
       "title": "Концерт Макс Коржа",
-      "price": "3500",
+      "price": 3500,
       "description": "Все купленные ранее билеты действительны на новую дату.",
       "images": [
         "https://i.pinimg.com/originals/43/f6/d3/43f6d36db051891148f2aec0e366d56f.jpg"

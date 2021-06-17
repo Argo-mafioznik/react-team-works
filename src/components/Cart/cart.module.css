@@ -3,9 +3,12 @@
 }
 
 .paper {
+  background-color: whitesmoke;
+  border-radius: 15px;
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
+  margin-bottom: 60px;
 }
 
 .total {
@@ -17,4 +20,5 @@
   width: 35px;
   border: none;
   outline: none;
+  background: none;
 }

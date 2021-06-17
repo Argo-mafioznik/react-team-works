@@ -6,11 +6,12 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import { Typography } from "@material-ui/core";
+import { IconButton, Typography } from "@material-ui/core";
 import { calcTotalPrice } from "../../helpers/calcPrice";
 import { storeContext } from "../../contexts/StoreContext";
 import { Link } from "react-router-dom";
 import classes from "./cart.module.css";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
 export default function Cart() {
   const { cart, getCart, changeProductCount } = useContext(storeContext);
@@ -18,6 +19,10 @@ export default function Cart() {
   useEffect(() => {
     getCart();
   }, []);
+
+  // const handleDelete = () => {
+  //   addProductToCart();
+  // };
 
   return (
     <>
@@ -60,6 +65,9 @@ export default function Cart() {
                       />
                     </TableCell>
                     <TableCell align="right">{elem.subPrice}</TableCell>
+                    <IconButton>
+                      <HighlightOffIcon />
+                    </IconButton>
                   </TableRow>
                 ))}
               </>

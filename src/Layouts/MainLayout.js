@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
   },
   addBtn: {
     position: "fixed",
-    top: "50%",
+    top: "40%",
     right: 15,
   },
   contentShift: {
@@ -148,18 +148,6 @@ export default function MainLayout(props) {
             <MenuIcon />
           </IconButton>
 
-          <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
-            <IconButton color="inherit">
-              <ShoppingCartIcon />
-            </IconButton>
-          </Link>
-
-          <Link to="/auth">
-            <IconButton>
-              <AccountCircleIcon style={{ color: "white" }} />
-            </IconButton>
-          </Link>
-
           <div className={classes.navContent}>
             <NavLink
               className={classes.logo}
@@ -167,12 +155,22 @@ export default function MainLayout(props) {
               to="/"
             >
               <Typography variant="h6" noWrap>
-                MyStore
+                Tickets
               </Typography>
             </NavLink>
 
             <SearchBar />
           </div>
+          <Link to="/auth">
+            <IconButton>
+              <AccountCircleIcon style={{ color: "white", display: "flex" }} />
+            </IconButton>
+          </Link>
+          <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+            <IconButton color="inherit">
+              <ShoppingCartIcon />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -194,23 +192,12 @@ export default function MainLayout(props) {
           </IconButton>
         </div>
         <Divider />
-        <Typography
-          style={{
-            color: "black",
-            fontWeight: 500,
-            margin: "10px 15px",
-          }}
-          variant="h5"
-        >
-          Исполнители
-        </Typography>
         <List>
           {brands.map((brand) => (
-            <Link to={`/brand/${brand.id}`}>
+            <Link to={`/brand/${brand.id}`} style={{ textDecoration: "none" }}>
               <ListItem button key={brand.id}>
                 <ListItemText
                   style={{
-                    textDecoration: "none",
                     color: "black",
                     outline: "none",
                   }}
@@ -235,7 +222,7 @@ export default function MainLayout(props) {
               paper: classes.drawerPaper,
             }}
             style={{
-              marginTop: 10,
+              marginTop: 15,
             }}
           />
           <Typography
@@ -259,7 +246,7 @@ export default function MainLayout(props) {
               paper: classes.drawerPaper,
             }}
             style={{
-              marginTop: 15,
+              marginTop: 10,
             }}
           />
           <Typography
@@ -270,9 +257,9 @@ export default function MainLayout(props) {
               cursor: "pointer",
             }}
             variant="h5"
-            onClick={() => history.push(`/tickets`)}
+            onClick={() => history.push(`/sports`)}
           >
-            Билеты
+            Спорт
           </Typography>
           <Divider
             className={classes.drawer}
@@ -283,7 +270,55 @@ export default function MainLayout(props) {
               paper: classes.drawerPaper,
             }}
             style={{
+              marginTop: 10,
+            }}
+          />
+          <Typography
+            style={{
+              color: "black",
+              marginLeft: 15,
               marginTop: 15,
+              cursor: "pointer",
+            }}
+            variant="h5"
+            onClick={() => history.push(`/ballets`)}
+          >
+            Балеты
+          </Typography>
+          <Divider
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              marginTop: 10,
+            }}
+          />
+          <Typography
+            style={{
+              color: "black",
+              marginLeft: 15,
+              marginTop: 15,
+              cursor: "pointer",
+            }}
+            variant="h5"
+            onClick={() => history.push(`/forum`)}
+          >
+            Форум
+          </Typography>
+          <Divider
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            style={{
+              marginTop: 10,
             }}
           />
         </List>
