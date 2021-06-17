@@ -7,11 +7,13 @@ import MainLayout from "../../Layouts/MainLayout";
 import classes from "./mainPage.module.css";
 
 import HeroImg from "../../assets/images/hero.jpeg";
-import HeroImg2 from "../../assets/images/hero2.jpeg";
 import HeroImg3 from "../../assets/images/hero3.jpeg";
-import HeroImg4 from "../../assets/images/hero4.jpeg";
-import HeroImg5 from "../../assets/images/hero5.jpeg";
-import HeroImg6 from "../../assets/images/hero6.jpeg";
+import Ballet from "../../assets/images/ballet.jpg";
+import Tennis from "../../assets/images/tennis.jpg";
+import Football from "../../assets/images/football.jpg";
+import Basketball from "../../assets/images/basketball.jpg";
+import Forum1 from "../../assets/images/forum1.png";
+import Forum from "../../assets/images/forum.jpg";
 
 export default function MainPage() {
   const { products, fetchProducts, total } = useContext(storeContext);
@@ -23,11 +25,13 @@ export default function MainPage() {
 
   const heroSlider = [
     { src: HeroImg, title: "hero" },
-    { src: HeroImg2, title: "hero2" },
     { src: HeroImg3, title: "hero3" },
-    { src: HeroImg4, title: "hero4" },
-    { src: HeroImg5, title: "hero5" },
-    { src: HeroImg6, title: "hero6" },
+    { src: Ballet, title: "ballet" },
+    { src: Tennis, title: "tennis" },
+    { src: Football, title: "football" },
+    { src: Basketball, title: "basketball" },
+    { src: Forum1, title: "forum1" },
+    { src: Forum, title: "forum" },
   ];
 
   return (

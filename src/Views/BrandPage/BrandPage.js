@@ -26,7 +26,7 @@ export default function BrandPage() {
               src,
             }))}
           />
-          <ProductsList products={products} />
+          {/* <ProductsList products={products} /> */}
         </>
       ) : (
         <Loader />
