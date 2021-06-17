@@ -206,7 +206,7 @@ export default function MainLayout(props) {
         </Typography>
         <List>
           {brands.map((brand) => (
-            <Link to={`/brand/${brand.id}`}>
+            <Link to={`/brand/${brand.id}`} style={{ textDecoration: "none" }}>
               <ListItem button key={brand.id}>
                 <ListItemText
                   style={{

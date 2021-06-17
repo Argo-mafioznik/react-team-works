@@ -58,6 +58,123 @@
       "images": [
         "https://static10.tgstat.ru/channels/_0/9a/9ad35b0090051b23f9b2534472cc37a6.jpg"
       ]
+    },
+    {
+      "title": "ЛЕБЕДИНОЕ ОЗЕРО",
+      "price": "5000",
+      "description": "\"Лебединое озеро\" – бриллиант мировой классической хореографии, визитная карточка русского балета.",
+      "images": [
+        "https://www.binoculars-travel.ru/wp-content/uploads/lebedinoe-ozero-1024x536.jpg"
+      ],
+      "id": 4
+    },
+    {
+      "title": "ЖИЗЕЛЬ",
+      "price": "5000",
+      "description": "\"В основе произведения «Жизель» Адольфа Адана лежит древняя славянская легенда о виллисах - погибших молодых незамужних девушках, преданных своими возлюбленными. Отныне они вынуждены мстить за себя, по ночам убивая молодых мужчин, увлекая их в свои танцы.\"",
+      "images": [
+        "https://espanarusa.com/files/autoupload/68/14/62/djjajdqx441806.jpg"
+      ],
+      "id": 5
+    },
+    {
+      "title": "СОН В ЛЕТНЮЮ НОЧЬ",
+      "price": "5000",
+      "description": "\"Комедия «Сон в летнюю ночь» была написана У.Шекспиром в 1590 году. Пьеса состоит из пяти актов. Он написал это произведение в честь свадьбы известного аристократа.\"",
+      "images": [
+        "https://www.belcanto.ru/media/images/publication/19129431.jpg"
+      ],
+      "id": 6
+    },
+    {
+      "title": "ЩЕЛКУНЧИК",
+      "price": "5000",
+      "description": "\"Самое волшебное и новогоднее произведение П.И. Чайковского, известное по всему миру – балет «Щелкунчик». Зачастую в классических операх или балетах есть один или несколько известных номеров, которые становятся знаковыми для произведения и горячо любимыми публикой. О «Щелкунчике» этого не скажешь, потому что весь балет состоит из таких «хитов»!\"",
+      "images": [
+        "https://faktoved.ru/wp-content/uploads/fakti-o-balete-shelkunchik.jpg"
+      ],
+      "id": 7
+    },
+    {
+      "title": "SAM SMITH",
+      "price": "7000",
+      "description": "...",
+      "images": [
+        "https://assets.vogue.com/photos/5891be9f6b17355a559375f1/master/pass/sam-smith-inez-and-vinoodh-march-2015-09.jpg"
+      ],
+      "id": 8
+    },
+    {
+      "title": "ADELE",
+      "price": "7000",
+      "description": "...",
+      "images": [
+        "https://img2.rtve.es/i/?w=1600&i=1603713752355.jpg"
+      ],
+      "id": 9
+    },
+    {
+      "title": "JOHN LEGEND",
+      "price": "7000",
+      "description": "...",
+      "images": [
+        "https://www.biography.com/.image/t_share/MTgwNTA3MTcxMjg3NDc1NTYw/gettyimages-1230039869.jpg"
+      ],
+      "id": 10
+    },
+    {
+      "title": "BIG MONEY",
+      "price": "6000",
+      "description": "\"В Бишкек приезжает миллиардер из Украины Евгений Черняк. Он приглашен на форум BIGMONEY, который пройдет 30 мая в пригороде Бишкека - в гольф-клубе \"Кленовый лист\".\"",
+      "images": [
+        "https://kereez.kg/images/3213449030479112151_n.jpg"
+      ],
+      "id": 11
+    },
+    {
+      "title": "ПРЕДПРИНИМАТЕЛЬ",
+      "price": "6000",
+      "description": "\"В Бишкеке во Дворце спорта состоится первый Центральноазиатский бизнес-форум «Предприниматель», на котором выступят предприниматели из списка Forbes\"",
+      "images": [
+        "https://chuprina-partners.com/wp-content/uploads/2021/03/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D1%81%D1%82%D0%B0-1024x1024.png"
+      ],
+      "id": 12
+    },
+    {
+      "title": "CHAMPIONS LEAGUE",
+      "price": "10000",
+      "description": "...",
+      "images": [
+        "https://www.sportsdaily.ru/s/image/143765.jpg"
+      ],
+      "id": 13
+    },
+    {
+      "title": "ЧЕМПИОНАТ МИРА ПО ХОККЕЮ 2021",
+      "price": "10000",
+      "description": "...",
+      "images": [
+        "https://w-dog.ru/wallpapers/3/9/466001733090959.jpg"
+      ],
+      "id": 15
+    },
+    {
+      "title": "WIMBLEDON",
+      "price": "20000",
+      "description": "...",
+      "images": [
+        "https://bugaga.ru/uploads/posts/2015-08/1438691418_fotosessiya-s-tennisistkami.jpg"
+      ],
+      "id": 16
+    },
+    {
+      "title": "NBA",
+      "price": "15000",
+      "description": "...",
+      "images": [
+        "https://cdn.nba.com/manage/2018/08/leaguev3.jpeg"
+      ],
+      "id": 17
     }
   ]
 }

@@ -11,6 +11,7 @@ export default function ProductSlider({ images }) {
       showArrows={false}
       showThumbs={false}
       infiniteLoop={true}
+      showStatus={false}
     >
       {images.map((image, index) => (
         <div key={index} className={classes.sliderImg}>
