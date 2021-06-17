@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
           </div>
 
           <Typography variant="h3">{productDetail.title}</Typography>
-          <Typography variant="h3">{productDetail.price} руб</Typography>
+          <Typography variant="h3">{productDetail.price} ₽</Typography>
           <Typography variant="body1">{productDetail.description}</Typography>
         </div>
       ) : (

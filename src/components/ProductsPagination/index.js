@@ -18,12 +18,15 @@ export default function ProductsPagination({ count, page, setPage }) {
 
   return (
     <Pagination
+      style={{
+        color: "white",
+      }}
       // change current page to clicked page
       onChange={(_, _page) => setPage(_page)}
       count={count}
       page={page}
       className={classes.pagination}
-      color="black"
+      color="primary"
     />
   );
 }
