@@ -9,6 +9,7 @@ const INIT_STATE = {
   productDetail: null,
   total: 0,
   cart: {},
+  favorites: {},
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -55,6 +56,11 @@ const reducer = (state = INIT_STATE, action) => {
       return {
         ...state,
         cart: action.payload,
+      };
+    case "GET_FAVORITES":
+      return {
+        ...state,
+        favorites: action.payload,
       };
     default:
       return state;
@@ -172,7 +178,7 @@ export default function StoreContextProvider(props) {
   };
 
   const getCart = () => {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem(""));
     if (!cart) {
       cart = {
         products: [],
@@ -201,7 +207,6 @@ export default function StoreContextProvider(props) {
       subPrice: 0,
     };
 
-    //если кликнутый продукт есть в корзине, то удаляем, а если нет то пушим
     let filteredCart = cart.products.filter(
       (elem) => elem.item.id === product.id
     );
@@ -232,6 +237,43 @@ export default function StoreContextProvider(props) {
     getCart();
   };
 
+  const getFavorites = () => {
+    let favorites = JSON.parse(localStorage.getItem("favorites"));
+    if (!favorites) {
+      favorites = {
+        products: [],
+      };
+    }
+    dispatch({
+      type: "GET_FAVORITES",
+      payload: favorites,
+    });
+  };
+
+  const addProductToFavorites = (product) => {
+    let favorites = JSON.parse(localStorage.getItem("favorites"));
+    if (!favorites) {
+      favorites = {
+        products: [],
+      };
+    }
+
+    let newProducts = {
+      items: product,
+    };
+
+    let filteredFavorites = favorites.products.filter(
+      (element) => element.items.id === product.id
+    );
+    if (filteredFavorites.length > 0) {
+      favorites.products = favorites.products.filter(
+        (element) => element.items.id !== product.id
+      );
+    } else {
+      favorites.products.push(newProducts);
+    }
+  };
+
   return (
     <storeContext.Provider
       value={{
@@ -241,6 +283,7 @@ export default function StoreContextProvider(props) {
         brands: state.brands,
         brandDetail: state.brandDetail,
         cart: state.cart,
+        favorites: state.favorites,
         fetchProducts,
         fetchProductDetail,
         createProduct,
@@ -253,6 +296,8 @@ export default function StoreContextProvider(props) {
         getCart,
         addProductToCart,
         changeProductCount,
+        getFavorites,
+        addProductToFavorites,
       }}
     >
       {props.children}

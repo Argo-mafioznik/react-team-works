@@ -29,6 +29,8 @@
 }
 
 .form button {
+  width: 130px;
+  height: 43px;
   align-self: flex-end;
   margin: 35px 0 25px;
   color: white;

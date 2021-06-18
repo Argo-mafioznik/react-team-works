@@ -21,8 +21,12 @@ import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { storeContext } from "../contexts/StoreContext";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const drawerWidth = 240;
 
@@ -61,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: "flex-end",
   },
@@ -104,6 +107,22 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     backgroundColor: "black",
+  },
+  footer: {
+    width: 250,
+    margin: "0 auto",
+    marginTop: 80,
+  },
+  footer__icon: {
+    width: 50,
+    height: 50,
+    margin: "20px 16px",
+    color: "whitesmoke",
+  },
+  footer_h3: {
+    textAlign: "center",
+    color: "whitesmoke",
+    fontSize: 20.6,
   },
 }));
 
@@ -161,14 +180,22 @@ export default function MainLayout(props) {
 
             <SearchBar />
           </div>
+          <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+            <IconButton color="inherit">
+              <ShoppingBasketIcon />
+            </IconButton>
+          </Link>
+          <Link
+            to="/favorites"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <IconButton color="inherit">
+              <FavoriteIcon />
+            </IconButton>
+          </Link>
           <Link to="/auth">
             <IconButton>
               <AccountCircleIcon style={{ color: "white", display: "flex" }} />
-            </IconButton>
-          </Link>
-          <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
-            <IconButton color="inherit">
-              <ShoppingCartIcon />
             </IconButton>
           </Link>
         </Toolbar>
@@ -192,6 +219,7 @@ export default function MainLayout(props) {
           </IconButton>
         </div>
         <Divider />
+        <Typography variant="h5">Фильтрация билетов</Typography>
         <List>
           {brands.map((brand) => (
             <Link to={`/brand/${brand.id}`} style={{ textDecoration: "none" }}>
@@ -333,11 +361,24 @@ export default function MainLayout(props) {
         <Fab
           onClick={() => history.push("/products/create")}
           className={classes.addBtn}
-          color="primary"
           aria-label="add"
         >
           <AddIcon />
         </Fab>
+        <div className={classes.footer}>
+          <div>
+            <a href="#">
+              <InstagramIcon className={classes.footer__icon} />
+            </a>
+            <a href="#">
+              <FacebookIcon className={classes.footer__icon} />
+            </a>
+            <a href="#">
+              <GitHubIcon className={classes.footer__icon} />
+            </a>
+          </div>
+          <h3 className={classes.footer_h3}> Copyright &copy; 2021 Tickets</h3>
+        </div>
       </main>
     </div>
   );

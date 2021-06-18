@@ -12,6 +12,7 @@
 .container p {
   font-size: 20px;
   color: whitesmoke;
+  margin-bottom: 50px;
 }
 
 .sliderWrapper {
@@ -34,4 +35,30 @@
   .container p {
     font-size: 18px;
   }
+}
+
+.delete {
+  background: #fff !important;
+  transition: all 0.2s ease 0s !important;
+  margin-right: 20px !important;
+}
+
+.delete:hover {
+  background: whitesmoke !important;
+  opacity: 0.6 !important;
+}
+
+.update {
+  background: whitesmoke !important;
+  transition: all 0.2s ease 0s !important;
+}
+
+.update:hover {
+  background: whitesmoke !important;
+  opacity: 0.6 !important;
+}
+
+.icons {
+  display: flex !important;
+  justify-content: flex-end !important;
 }

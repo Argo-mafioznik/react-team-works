@@ -7,21 +7,17 @@ const useStyles = makeStyles(() => ({
     margin: "50px auto",
     display: "flex",
     justifyContent: "center",
+    width: "250px",
+    borderRadius: 13,
+    padding: 3,
+    backgroundColor: "whitesmoke",
   },
 }));
 
 export default function ProductsPagination({ count, page, setPage }) {
   const classes = useStyles();
-
-  // count - amount of pages in pagination
-  // page - currentPage
-
   return (
     <Pagination
-      style={{
-        color: "white",
-      }}
-      // change current page to clicked page
       onChange={(_, _page) => setPage(_page)}
       count={count}
       page={page}

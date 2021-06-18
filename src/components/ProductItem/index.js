@@ -10,6 +10,9 @@ import Typography from "@material-ui/core/Typography";
 import Truncate from "react-truncate";
 import { useHistory } from "react-router";
 import { storeContext } from "../../contexts/StoreContext";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import { IconButton } from "@material-ui/core";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 const useStyles = makeStyles({
   root: {
@@ -29,7 +32,7 @@ export default function ProductItem({ data }) {
 
   const { title, images, price, description, id } = data;
 
-  const { addProductToCart } = useContext(storeContext);
+  const { addProductToCart, addProductToFavorites } = useContext(storeContext);
 
   const history = useHistory();
 
@@ -64,20 +67,12 @@ export default function ProductItem({ data }) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.button}>
-        <Button
-          onClick={() => addProductToCart(data)}
-          size="small"
-          color="primary"
-        >
-          Добавить
-        </Button>
-        <Button
-          onClick={() => history.push(`/products/${id}`)}
-          size="small"
-          color="primary"
-        >
-          Далее
-        </Button>
+        <IconButton onClick={() => addProductToCart(data)} size="large">
+          <AddShoppingCartIcon />
+        </IconButton>
+        <IconButton onClick={() => addProductToFavorites(data)} size="large">
+          <FavoriteBorderIcon />
+        </IconButton>
       </CardActions>
     </Card>
   );

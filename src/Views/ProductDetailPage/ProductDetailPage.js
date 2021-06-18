@@ -40,12 +40,18 @@ export default function ProductDetailPage() {
         <div className={classes.container}>
           <ProductSlider images={productDetail.images} />
 
-          <div>
-            <IconButton onClick={handleProductDelete}>
+          <div className={classes.icons}>
+            <IconButton
+              onClick={handleProductDelete}
+              className={classes.delete}
+            >
               <DeleteIcon />
             </IconButton>
 
-            <IconButton onClick={() => history.push(`/products/${id}/update`)}>
+            <IconButton
+              onClick={() => history.push(`/products/${id}/update`)}
+              className={classes.update}
+            >
               <EditIcon />
             </IconButton>
           </div>

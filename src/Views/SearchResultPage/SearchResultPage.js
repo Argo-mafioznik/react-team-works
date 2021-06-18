@@ -1,14 +1,14 @@
-import { makeStyles, Typography } from '@material-ui/core';
-import React, { useContext, useEffect } from 'react';
-import { useParams } from 'react-router';
-import ProductsList from '../../components/ProductsList';
-import { storeContext } from '../../contexts/StoreContext';
-import MainLayout from '../../Layouts/MainLayout';
+import { makeStyles, Typography } from "@material-ui/core";
+import React, { useContext, useEffect } from "react";
+import { useParams } from "react-router";
+import ProductsList from "../../components/ProductsList";
+import { storeContext } from "../../contexts/StoreContext";
+import MainLayout from "../../Layouts/MainLayout";
 
 const useStyles = makeStyles(() => ({
   title: {
     marginBottom: 40,
-    textAlign: 'center',
+    textAlign: "center",
   },
 }));
 
@@ -23,7 +23,11 @@ export default function SearchResultPage() {
 
   return (
     <MainLayout>
-      <Typography className={classes.title} variant="h4">
+      <Typography
+        className={classes.title}
+        variant="h4"
+        style={{ color: "whitesmoke" }}
+      >
         Результаты поиска по "{searchValue}"
       </Typography>
       <ProductsList products={products} />
