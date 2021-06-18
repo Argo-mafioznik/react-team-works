@@ -9,6 +9,7 @@ import { storeContext } from "../../contexts/StoreContext";
 import { Link } from "react-router-dom";
 import classes from "./favorites.module.css";
 import MainLayout from "../../Layouts/MainLayout";
+import StarsIcon from "@material-ui/icons/Stars";
 
 export default function Favorites() {
   const { favorites, getFavorites } = useContext(storeContext);
@@ -33,30 +34,24 @@ export default function Favorites() {
               <TableCell className={classes.tableCell} align="right">
                 Price:
               </TableCell>
-              <TableCell className={classes.tableCell} align="right">
-                Count:
-              </TableCell>
-              <TableCell className={classes.tableCell} align="right">
-                SubPrice:
-              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {favorites.products ? (
               <>
                 {favorites.products.map((element) => (
-                  <TableRow key={element.item.id}>
+                  <TableRow key={element.items.id}>
                     <TableCell>
                       <img
                         className={classes.cartImages}
                         style={{ width: "200px" }}
-                        src={element.item.images[0]}
+                        src={element.items.images}
                         alt=""
                       />{" "}
                     </TableCell>
-                    <TableCell align="right">{element.item.title}</TableCell>
-                    <TableCell align="right">{element.item.price}</TableCell>
-                    <TableCell align="right"></TableCell>
+                    <TableCell align="right">{element.items.title}</TableCell>
+                    <TableCell align="right">{element.items.price}</TableCell>
+                    <StarsIcon className={classes.favoriteIcon} />
                   </TableRow>
                 ))}
               </>

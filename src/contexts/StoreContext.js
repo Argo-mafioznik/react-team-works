@@ -178,7 +178,7 @@ export default function StoreContextProvider(props) {
   };
 
   const getCart = () => {
-    let cart = JSON.parse(localStorage.getItem(""));
+    let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
       cart = {
         products: [],
@@ -273,7 +273,7 @@ export default function StoreContextProvider(props) {
       favorites.products.push(newProducts);
     }
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    getFavorites();
+    // getFavorites();
   };
 
   return (
