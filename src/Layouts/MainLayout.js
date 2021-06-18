@@ -29,6 +29,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import StarIcon from "@material-ui/icons/Star";
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -194,7 +195,7 @@ export default function MainLayout(props) {
               <StarIcon />
             </IconButton>
           </Link>
-          <Link to="/auth">
+          <Link to="/signup">
             <IconButton>
               <AccountCircleIcon style={{ color: "white", display: "flex" }} />
             </IconButton>

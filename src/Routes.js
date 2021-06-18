@@ -13,6 +13,11 @@ import ProductDetailPage from "./Views/ProductDetailPage/ProductDetailPage";
 import ProductUpdatePage from "./Views/ProductUpdatePage/ProductUpdatePage";
 import SearchResultPage from "./Views/SearchResultPage/SearchResultPage";
 import Sports from "./Views/Sports/Sports";
+import Signup from "./Views/Auth/Signup";
+import Login from "./Views/Auth/Login";
+import FormOrder from "../src/Views/Form/FormOrder";
+
+
 
 export default function Routes() {
   return (
@@ -38,7 +43,14 @@ export default function Routes() {
         <Route path="/concerts" component={Concerts} exact />
         <Route path="/sports" component={Sports} exact />
         <Route path="/ballets" component={Ballets} exact />
-        <Route path="/forum" component={Forum} exact />
+
+        
+        <Route path="/signup" component={Signup} exact />
+        <Route path="/login" component={Login} exact />
+        <Route path="/form" component={FormOrder} exact />
+
+        
+         
       </Switch>
     </Router>
   );
