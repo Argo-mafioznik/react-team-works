@@ -13,7 +13,7 @@ import SearchResultPage from "./Views/SearchResultPage/SearchResultPage";
 import Sports from "./Views/Sports/Sports";
 import Signup from "./Views/Auth/Signup";
 import Login from "./Views/Auth/Login";
-import FormOrder from "../src/Views/Form/FormOrder";
+import { Container } from "react-bootstrap";
 
 
 
@@ -44,7 +44,7 @@ export default function Routes() {
         
         <Route path="/signup" component={Signup} exact />
           <Route path="/login" component={Login} exact />
-          <Route path="/form" component={FormOrder} exact />
+          <Route path="/form" component={Form} exact />
 
         
          
