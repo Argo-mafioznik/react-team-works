@@ -1,6 +1,7 @@
 import React from "react";
 import Routes from "./Routes";
 import StoreContextProvider from "./contexts/StoreContext";
+import { AuthProvider } from "./contexts/AuthContext";
 
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
@@ -18,7 +19,10 @@ function App() {
   return (
     <ConfirmProvider defaultOptions={defaultConfirmOptions}>
       <StoreContextProvider>
+        <AuthProvider>
         <Routes />
+
+        </AuthProvider>
       </StoreContextProvider>
     </ConfirmProvider>
   );

@@ -28,6 +28,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -193,7 +194,7 @@ export default function MainLayout(props) {
               <FavoriteIcon />
             </IconButton>
           </Link>
-          <Link to="/auth">
+          <Link to="/signup">
             <IconButton>
               <AccountCircleIcon style={{ color: "white", display: "flex" }} />
             </IconButton>
