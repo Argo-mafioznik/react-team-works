@@ -41,5 +41,10 @@
 }
 
 .home:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
+}
+
+.favoriteIcon {
+  width: 30px !important;
+  height: 30px !important;
 }
