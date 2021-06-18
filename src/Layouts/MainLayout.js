@@ -263,7 +263,7 @@ export default function MainLayout(props) {
             variant="h5"
             onClick={() => history.push(`/concerts`)}
           >
-            Концерты
+            Концерт
           </Typography>
           <Divider
             className={classes.drawer}
@@ -311,7 +311,7 @@ export default function MainLayout(props) {
             variant="h5"
             onClick={() => history.push(`/ballets`)}
           >
-            Балеты
+            Балет
           </Typography>
           <Divider
             className={classes.drawer}

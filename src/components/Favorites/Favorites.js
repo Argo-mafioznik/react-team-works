@@ -44,19 +44,19 @@ export default function Favorites() {
           <TableBody>
             {favorites.products ? (
               <>
-                {favorites.products.map((elem) => (
-                  <TableRow key={elem.item.id}>
+                {favorites.products.map((element) => (
+                  <TableRow key={element.item.id}>
                     <TableCell>
                       <img
                         className={classes.cartImages}
                         style={{ width: "200px" }}
-                        src={elem.item.images[0]}
+                        src={element.item.images[0]}
                         alt=""
                       />{" "}
                     </TableCell>
-                    <TableCell align="right">{elem.item.title}</TableCell>
-                    <TableCell align="right">{elem.item.price}</TableCell>
-                    <TableCell align="right"></TableCell>яяяяяяяя
+                    <TableCell align="right">{element.item.title}</TableCell>
+                    <TableCell align="right">{element.item.price}</TableCell>
+                    <TableCell align="right"></TableCell>
                   </TableRow>
                 ))}
               </>

@@ -272,6 +272,8 @@ export default function StoreContextProvider(props) {
     } else {
       favorites.products.push(newProducts);
     }
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    getFavorites();
   };
 
   return (
