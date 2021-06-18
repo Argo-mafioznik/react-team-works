@@ -44,7 +44,7 @@ export default function Routes() {
         
         <Route path="/signup" component={Signup} exact />
           <Route path="/login" component={Login} exact />
-          <Route path="/form" component={Form} exact />
+          {/* <Route path="/form" component={Form} exact /> */}
 
         
          
