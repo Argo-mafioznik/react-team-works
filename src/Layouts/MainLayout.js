@@ -26,7 +26,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+import StarIcon from "@material-ui/icons/Star";
 
 const drawerWidth = 240;
 
@@ -190,7 +190,7 @@ export default function MainLayout(props) {
             style={{ textDecoration: "none", color: "white" }}
           >
             <IconButton color="inherit">
-              <FavoriteIcon />
+              <StarIcon />
             </IconButton>
           </Link>
           <Link to="/auth">

@@ -12,6 +12,8 @@ export default function HeroSlider({ slider }) {
       showThumbs={false}
       infiniteLoop={true}
       showStatus={false}
+      autoPlay={true}
+      interval={4000}
     >
       {slider.map((image) => (
         <div className={classes.heroImg}>
