@@ -27,8 +27,6 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import StarIcon from "@material-ui/icons/Star";
-
 
 const drawerWidth = 240;
 
@@ -192,10 +190,10 @@ export default function MainLayout(props) {
             style={{ textDecoration: "none", color: "white" }}
           >
             <IconButton color="inherit">
-              <StarIcon />
+              <FavoriteIcon />
             </IconButton>
           </Link>
-          <Link to="/signup">
+          <Link to="/auth">
             <IconButton>
               <AccountCircleIcon style={{ color: "white", display: "flex" }} />
             </IconButton>
@@ -369,16 +367,13 @@ export default function MainLayout(props) {
         </Fab>
         <div className={classes.footer}>
           <div>
-            <a
-              href="https://www.instagram.com/appak_mamalak/?hl=ru"
-              target="_blank"
-            >
+            <a href="#">
               <InstagramIcon className={classes.footer__icon} />
             </a>
-            <a href="#" target="_blank">
+            <a href="#">
               <FacebookIcon className={classes.footer__icon} />
             </a>
-            <a href="https://github.com/Argo-mafioznik" target="_blank">
+            <a href="#">
               <GitHubIcon className={classes.footer__icon} />
             </a>
           </div>

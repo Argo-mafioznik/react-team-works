@@ -5,7 +5,6 @@ import StoreContextProvider from "./contexts/StoreContext";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import { ConfirmProvider } from "material-ui-confirm";
-// import { AuthProvider } from "./contexts/AuthContext";
 
 toast.configure();
 
@@ -18,11 +17,9 @@ const defaultConfirmOptions = {
 function App() {
   return (
     <ConfirmProvider defaultOptions={defaultConfirmOptions}>
-      {/* <AuthProvider> */}
       <StoreContextProvider>
         <Routes />
       </StoreContextProvider>
-      {/* </AuthProvider> */}
     </ConfirmProvider>
   );
 }

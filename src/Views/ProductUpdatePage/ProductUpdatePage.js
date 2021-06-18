@@ -1,20 +1,20 @@
-import { ErrorMessage, Field, Form, Formik } from 'formik';
-import React, { useContext, useEffect, useState } from 'react';
-import MainLayout from '../../Layouts/MainLayout';
-import * as Yup from 'yup';
-import { Button, TextField, Typography } from '@material-ui/core';
-import classes from './productUpdate.module.css';
-import TextError from '../../components/TextError';
-import { storeContext } from '../../contexts/StoreContext';
-import { notifySuccess } from '../../helpers/notifiers';
-import { useHistory, useParams } from 'react-router';
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import React, { useContext, useEffect, useState } from "react";
+import MainLayout from "../../Layouts/MainLayout";
+import * as Yup from "yup";
+import { Button, TextField, Typography } from "@material-ui/core";
+import classes from "./productUpdate.module.css";
+import TextError from "../../components/TextError";
+import { storeContext } from "../../contexts/StoreContext";
+import { notifySuccess } from "../../helpers/notifiers";
+import { useHistory, useParams } from "react-router";
 
 export default function ProductUpdatePage() {
   const [initialValues, setInitialValues] = useState({
-    title: '',
-    price: '',
-    description: '',
-    images: '',
+    title: "",
+    price: "",
+    description: "",
+    images: "",
   });
 
   const { id } = useParams();
@@ -38,12 +38,12 @@ export default function ProductUpdatePage() {
   const history = useHistory();
 
   const validationSchema = Yup.object({
-    title: Yup.string().required('Обязательное поле!'),
+    title: Yup.string().required("Обязательное поле!"),
     price: Yup.number()
-      .typeError('Введите число!')
-      .required('Обязательное поле!'),
-    description: Yup.string().required('Обязательное поле!'),
-    images: Yup.string().required('Обязательное поле!'),
+      .typeError("Введите число!")
+      .required("Обязательное поле!"),
+    description: Yup.string().required("Обязательное поле!"),
+    images: Yup.string().required("Обязательное поле!"),
   });
 
   const onSubmit = (values) => {
@@ -51,7 +51,7 @@ export default function ProductUpdatePage() {
       ...values,
       images: [values.images],
     }).then(() => {
-      notifySuccess('Продукт был изменен!');
+      notifySuccess("Продукт был успешно изменен!");
       history.push(`/products/${id}`);
     });
   };
