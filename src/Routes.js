@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Favorites from "./components/Favorites/Favorites";
-import Auth from "./Views/Auth/Auth";
+// import Auth from "./Views/Auth/Auth";
 import Ballets from "./Views/Ballet/Ballet";
 import BrandPage from "./Views/BrandPage/BrandPage";
 import Concerts from "./Views/Concerts/Concerts";
@@ -13,11 +13,7 @@ import ProductDetailPage from "./Views/ProductDetailPage/ProductDetailPage";
 import ProductUpdatePage from "./Views/ProductUpdatePage/ProductUpdatePage";
 import SearchResultPage from "./Views/SearchResultPage/SearchResultPage";
 import Sports from "./Views/Sports/Sports";
-import Signup from "./Views/Auth/Signup";
-import Login from "./Views/Auth/Login";
 import FormOrder from "../src/Views/Form/FormOrder";
-
-
 
 export default function Routes() {
   return (
@@ -39,18 +35,12 @@ export default function Routes() {
         <Route path="/brand/:id" component={BrandPage} exact />
         <Route path="/cart" component={Cart} exact />
         <Route path="/favorites" component={Favorites} exact />
-        <Route path="/auth" component={Auth} exact />
         <Route path="/concerts" component={Concerts} exact />
         <Route path="/sports" component={Sports} exact />
+        <Route path="/forum" component={Forum} exact />
         <Route path="/ballets" component={Ballets} exact />
 
-        
-        <Route path="/signup" component={Signup} exact />
-        <Route path="/login" component={Login} exact />
         <Route path="/form" component={FormOrder} exact />
-
-        
-         
       </Switch>
     </Router>
   );
