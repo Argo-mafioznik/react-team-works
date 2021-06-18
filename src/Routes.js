@@ -2,9 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Favorites from "./components/Favorites/Favorites";
+import Auth from "./Views/Auth/Auth";
 import Ballets from "./Views/Ballet/Ballet";
 import BrandPage from "./Views/BrandPage/BrandPage";
 import Concerts from "./Views/Concerts/Concerts";
+import Forum from "./Views/Forum/Forum";
 import MainPage from "./Views/MainPage/MainPage";
 import ProductCreatePage from "./Views/ProductCreatePage/ProductCreatePage";
 import ProductDetailPage from "./Views/ProductDetailPage/ProductDetailPage";
@@ -37,14 +39,15 @@ export default function Routes() {
         <Route path="/brand/:id" component={BrandPage} exact />
         <Route path="/cart" component={Cart} exact />
         <Route path="/favorites" component={Favorites} exact />
+        <Route path="/auth" component={Auth} exact />
         <Route path="/concerts" component={Concerts} exact />
         <Route path="/sports" component={Sports} exact />
         <Route path="/ballets" component={Ballets} exact />
 
         
         <Route path="/signup" component={Signup} exact />
-          <Route path="/login" component={Login} exact />
-          <Route path="/form" component={FormOrder} exact />
+        <Route path="/login" component={Login} exact />
+        <Route path="/form" component={FormOrder} exact />
 
         
          

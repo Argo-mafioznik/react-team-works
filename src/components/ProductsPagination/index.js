@@ -4,12 +4,13 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   pagination: {
-    margin: "50px auto",
+    margin: "0 auto",
     display: "flex",
     justifyContent: "center",
     width: "250px",
     borderRadius: 13,
     padding: 3,
+    marginTop: 80,
     backgroundColor: "whitesmoke",
   },
 }));
