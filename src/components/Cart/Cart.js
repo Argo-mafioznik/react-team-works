@@ -58,7 +58,7 @@ export default function Cart() {
                       />{" "}
                     </TableCell>
                     <TableCell align="right">{elem.item.title}</TableCell>
-                    <TableCell align="right">{elem.item.price}</TableCell>
+                    <TableCell align="right">{elem.item.price} ₽</TableCell>
                     <TableCell align="right">
                       <input
                         className={classes.count}
@@ -69,7 +69,7 @@ export default function Cart() {
                         }
                       />
                     </TableCell>
-                    <TableCell align="right">{elem.subPrice}</TableCell>
+                    <TableCell align="right">{elem.subPrice} ₽</TableCell>
                   </TableRow>
                 ))}
               </>
@@ -85,7 +85,8 @@ export default function Cart() {
               {cart.products ? (
                 <TableCell align="right">
                   <Typography variant="h5">
-                    {calcTotalPrice(cart.products)}{" "}
+                    {calcTotalPrice(cart.products)}
+                    {" ₽"}
                   </Typography>{" "}
                 </TableCell>
               ) : null}

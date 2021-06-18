@@ -31,7 +31,8 @@ export default function ProductItem({ data }) {
 
   const { title, images, price, description, id } = data;
 
-  const { addProductToCart, addProductToFavorites } = useContext(storeContext);
+  const { addProductToCart, addProductToFavorites, favorites } =
+    useContext(storeContext);
 
   const history = useHistory();
 

@@ -4,7 +4,6 @@ import ProductsList from "../../components/ProductsList";
 import ProductsPagination from "../../components/ProductsPagination";
 import { storeContext } from "../../contexts/StoreContext";
 import MainLayout from "../../Layouts/MainLayout";
-import classes from "./mainPage.module.css";
 
 import HeroImg from "../../assets/images/hero.jpeg";
 import HeroImg3 from "../../assets/images/hero3.jpeg";
