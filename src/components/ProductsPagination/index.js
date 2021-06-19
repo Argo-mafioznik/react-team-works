@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
     margin: "0 auto",
     display: "flex",
     justifyContent: "center",
-    width: "250px",
+    width: "25%",
     borderRadius: 13,
     padding: 3,
     marginTop: 80,

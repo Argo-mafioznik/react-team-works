@@ -367,13 +367,19 @@ export default function MainLayout(props) {
         </Fab>
         <div className={classes.footer}>
           <div>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/appak_mamalak/?hl=ru"
+              target="_blank"
+            >
               <InstagramIcon className={classes.footer__icon} />
             </a>
             <a href="#">
               <FacebookIcon className={classes.footer__icon} />
             </a>
-            <a href="#">
+            <a
+              href="https://github.com/Argo-mafioznik/react-team-works"
+              target="_blank"
+            >
               <GitHubIcon className={classes.footer__icon} />
             </a>
           </div>

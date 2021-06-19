@@ -33,8 +33,8 @@
       "title": "Концерт",
       "logo": "https://image.flaticon.com/icons/png/512/431/431247.png",
       "sliderImages": [
-        "https://lh3.googleusercontent.com/proxy/GAxquzTFWuEFeYU89torR_gXZpOZ-klH7nM_NUX2LSEMeYdLwPDZYG0OV6sK8YDPVh6jHtCYH-bwW5bI0YdrDrFH4wVrt2wVMuM1bqANyOR_NxO4uH2EKKI5NtQ",
-        "https://lh3.googleusercontent.com/proxy/GAxquzTFWuEFeYU89torR_gXZpOZ-klH7nM_NUX2LSEMeYdLwPDZYG0OV6sK8YDPVh6jHtCYH-bwW5bI0YdrDrFH4wVrt2wVMuM1bqANyOR_NxO4uH2EKKI5NtQ"
+        "https://p0.pikist.com/photos/464/456/concert-dark-light-man-music-musician-performance-singer-smoke.jpg",
+        "https://p0.pikist.com/photos/712/607/people-man-woman-concert-hands-silhouette-lights-dark-night.jpg"
       ]
     }
   ],
@@ -44,7 +44,7 @@
       "brand": 4,
       "title": "Концерт Скриптонита в Питере",
       "price": 3500,
-      "description": "Все купленные ранее билеты действительны на новую дату.",
+      "description": "Все купленные ранее билеты действительны на новую дату. fhutt",
       "images": [
         "https://avatars.mds.yandex.net/get-zen_doc/1668009/pub_5e0357b8118d7f00bee15c00_5e0357b9027a1500b1d474fc/scale_1200"
       ]
@@ -198,6 +198,42 @@
       ],
       "brand": 1,
       "id": 17
+    },
+    {
+      "title": "ararararraarar",
+      "price": "124124",
+      "description": "ararararar",
+      "images": [
+        "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/059568a08f5b4901a734ac6e00eca938_9366/kurtka-dozhdevik-myshelter.jpg"
+      ],
+      "id": 18
+    },
+    {
+      "title": "fhudwfw",
+      "price": "14141",
+      "description": "afmwfn",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/0e01c57ab353404dac8aac84014f3027_9366/Krossovki_OZWEEGO_bezhevyj_GZ2776_01_standard.jpg, https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/b20fd6e934a543b88070ac84014f485c_9366/Krossovki_OZWEEGO_bezhevyj_GZ2776_04_standard.jpg, https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/d356c9a54a2843f2a7afac84014f35ec_9366/Krossovki_OZWEEGO_bezhevyj_GZ2776_06_standard.jpg"
+      ],
+      "id": 19
+    },
+    {
+      "title": "Argen Alimbaev",
+      "price": "50000000000000000",
+      "description": "пшищцпщи",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/fdc3147332144b03a307ad16013f9f4f_9366/Krossovki_Court_Bold_belyj_GZ2694_01_standard.jpg"
+      ],
+      "id": 20
+    },
+    {
+      "title": "Argen Alimbaev",
+      "price": "500000",
+      "description": "fonweoifnfw",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/fdc3147332144b03a307ad16013f9f4f_9366/Krossovki_Court_Bold_belyj_GZ2694_01_standard.jpg"
+      ],
+      "id": 21
     }
   ]
 }

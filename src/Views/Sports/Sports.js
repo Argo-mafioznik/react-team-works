@@ -45,7 +45,7 @@ export default function Sports() {
             className={classes.item}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/i8nCBkdNlbg?start=950"
+            src="https://www.youtube.com/embed/ue2HFAU0Kx8"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -61,7 +61,7 @@ export default function Sports() {
             className={classes.item}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/j1Iy1ekdrs4?start=950"
+            src="https://www.youtube.com/embed/jvXUUPaFm0M"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
