@@ -59,9 +59,7 @@ export default function ProductCreatePage() {
                 variant="outlined"
                 as={TextField}
               />
-
               <ErrorMessage component={TextError} name="title" />
-
               <label>Цена</label>
               <Field
                 className={classes.input}
@@ -69,10 +67,8 @@ export default function ProductCreatePage() {
                 variant="outlined"
                 as={TextField}
               />
-
               <ErrorMessage component={TextError} name="price" />
-
-              <label>Описание</label>
+              <label>Описание</label>p
               <Field
                 variant="outlined"
                 className={classes.input}
@@ -81,9 +77,7 @@ export default function ProductCreatePage() {
                 name="description"
                 as={TextField}
               />
-
               <ErrorMessage component={TextError} name="description" />
-
               <label>Изображение</label>
               <Field
                 className={classes.input}
@@ -91,9 +85,7 @@ export default function ProductCreatePage() {
                 variant="outlined"
                 as={TextField}
               />
-
               <ErrorMessage component={TextError} name="images" />
-
               <Button type="submit" color="primary" variant="contained">
                 Создать
               </Button>
